@@ -1,0 +1,1493 @@
+[2026-01-29 14:03:21] - DEBUG - Hardware model detected: LENOVO 0627A17; UEFI mode: True
+[2026-01-29 14:03:21] - DEBUG - Processor model detected: AMD E-450 APU with Radeon(tm) HD Graphics
+[2026-01-29 14:03:21] - DEBUG - Memory statistics: 6217588 available out of 7713768 total installed
+[2026-01-29 14:03:21] - DEBUG - Could not detect virtual system: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
+
+[2026-01-29 14:03:21] - DEBUG - System is not running in a VM: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
+
+[2026-01-29 14:03:21] - DEBUG - Virtualization detected: None; is VM: False
+[2026-01-29 14:03:21] - DEBUG - Graphics devices detected: dict_keys(['Advanced Micro Devices, Inc. [AMD/ATI] Wrestler [Radeon HD 6320]'])
+[2026-01-29 14:03:21] - DEBUG - Disk states before installing:
+{
+    "blockdevices": [
+        {
+            "name": "loop0",
+            "path": "/dev/loop0",
+            "pkname": null,
+            "log_sec": 512,
+            "size": "971 MiB",
+            "pttype": null,
+            "ptuuid": null,
+            "rota": false,
+            "tran": null,
+            "partn": null,
+            "partuuid": null,
+            "parttype": null,
+            "uuid": null,
+            "fstype": "squashfs",
+            "fsver": "4.0",
+            "fsavail": 0,
+            "fsuse_percentage": "100%",
+            "type": "loop",
+            "mountpoint": "/run/archiso/airootfs",
+            "mountpoints": [
+                "/run/archiso/airootfs"
+            ],
+            "fsroots": [
+                "/"
+            ],
+            "children": []
+        },
+        {
+            "name": "sda",
+            "path": "/dev/sda",
+            "pkname": null,
+            "log_sec": 512,
+            "size": "228936 MiB",
+            "pttype": "gpt",
+            "ptuuid": "9808ebd2-815a-4c5c-b607-e76456480f81",
+            "rota": false,
+            "tran": "sata",
+            "partn": null,
+            "partuuid": null,
+            "parttype": null,
+            "uuid": null,
+            "fstype": null,
+            "fsver": null,
+            "fsavail": null,
+            "fsuse_percentage": null,
+            "type": "disk",
+            "mountpoint": null,
+            "mountpoints": [],
+            "fsroots": [],
+            "children": [
+                {
+                    "name": "sda1",
+                    "path": "/dev/sda1",
+                    "pkname": "sda",
+                    "log_sec": 512,
+                    "size": "228935 MiB",
+                    "pttype": "gpt",
+                    "ptuuid": "9808ebd2-815a-4c5c-b607-e76456480f81",
+                    "rota": false,
+                    "tran": null,
+                    "partn": 1,
+                    "partuuid": "b53a2def-3e08-4da3-adeb-be577d8a9357",
+                    "parttype": "0fc63daf-8483-4772-8e79-3d69d8477de4",
+                    "uuid": "c82e27c4-979a-46ef-acd4-8ee22fc2cc3e",
+                    "fstype": "btrfs",
+                    "fsver": null,
+                    "fsavail": null,
+                    "fsuse_percentage": null,
+                    "type": "part",
+                    "mountpoint": null,
+                    "mountpoints": [],
+                    "fsroots": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "sdb",
+            "path": "/dev/sdb",
+            "pkname": null,
+            "log_sec": 512,
+            "size": "14755 MiB",
+            "pttype": "dos",
+            "ptuuid": "1da63f6e",
+            "rota": true,
+            "tran": "usb",
+            "partn": null,
+            "partuuid": null,
+            "parttype": null,
+            "uuid": null,
+            "fstype": null,
+            "fsver": null,
+            "fsavail": null,
+            "fsuse_percentage": null,
+            "type": "disk",
+            "mountpoint": null,
+            "mountpoints": [],
+            "fsroots": [],
+            "children": [
+                {
+                    "name": "sdb1",
+                    "path": "/dev/sdb1",
+                    "pkname": "sdb",
+                    "log_sec": 512,
+                    "size": "14722 MiB",
+                    "pttype": "dos",
+                    "ptuuid": "1da63f6e",
+                    "rota": true,
+                    "tran": null,
+                    "partn": 1,
+                    "partuuid": "1da63f6e-01",
+                    "parttype": "0x7",
+                    "uuid": "B5CC-8760",
+                    "fstype": "exfat",
+                    "fsver": "1.0",
+                    "fsavail": null,
+                    "fsuse_percentage": null,
+                    "type": "part",
+                    "mountpoint": null,
+                    "mountpoints": [],
+                    "fsroots": [],
+                    "children": [
+                        {
+                            "name": "ventoy",
+                            "path": "/dev/mapper/ventoy",
+                            "pkname": "sdb1",
+                            "log_sec": 512,
+                            "size": "1467 MiB",
+                            "pttype": "dos",
+                            "ptuuid": "2822af79",
+                            "rota": true,
+                            "tran": null,
+                            "partn": null,
+                            "partuuid": null,
+                            "parttype": null,
+                            "uuid": "2026-01-01-11-33-55-00",
+                            "fstype": "iso9660",
+                            "fsver": "Joliet Extension",
+                            "fsavail": null,
+                            "fsuse_percentage": null,
+                            "type": "dm",
+                            "mountpoint": null,
+                            "mountpoints": [],
+                            "fsroots": [],
+                            "children": []
+                        },
+                        {
+                            "name": "sdb1",
+                            "path": "/dev/mapper/sdb1",
+                            "pkname": "sdb1",
+                            "log_sec": 512,
+                            "size": "14722 MiB",
+                            "pttype": null,
+                            "ptuuid": null,
+                            "rota": true,
+                            "tran": null,
+                            "partn": null,
+                            "partuuid": null,
+                            "parttype": null,
+                            "uuid": "B5CC-8760",
+                            "fstype": "exfat",
+                            "fsver": "1.0",
+                            "fsavail": null,
+                            "fsuse_percentage": null,
+                            "type": "dm",
+                            "mountpoint": null,
+                            "mountpoints": [],
+                            "fsroots": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "sdb2",
+                    "path": "/dev/sdb2",
+                    "pkname": "sdb",
+                    "log_sec": 512,
+                    "size": "32 MiB",
+                    "pttype": "dos",
+                    "ptuuid": "1da63f6e",
+                    "rota": true,
+                    "tran": null,
+                    "partn": 2,
+                    "partuuid": "1da63f6e-02",
+                    "parttype": "0xef",
+                    "uuid": "E039-AD96",
+                    "fstype": "vfat",
+                    "fsver": "FAT16",
+                    "fsavail": null,
+                    "fsuse_percentage": null,
+                    "type": "part",
+                    "mountpoint": null,
+                    "mountpoints": [],
+                    "fsroots": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
+[2026-01-29 14:03:21] - INFO - Fetching Arch Linux package database...
+[2026-01-29 14:03:22] - INFO - Checking version...
+[2026-01-29 14:03:23] - INFO - New version available: archinstall 3.0.15-1 -> 3.0.15-2
+[2026-01-29 14:03:23] - INFO - New version available: archinstall 3.0.15-1 -> 3.0.15-2
+[2026-01-29 14:03:26] - DEBUG - Running from ISO (Live Mode)...
+[2026-01-29 14:03:27] - DEBUG - Mounting /dev/sda1: mount /dev/sda1 /mnt/arch_btrfs
+[2026-01-29 14:03:27] - DEBUG - Partition /dev/sda1 is currently mounted at: ['/mnt/arch_btrfs']
+[2026-01-29 14:03:27] - DEBUG - Unmounting mountpoint: /mnt/arch_btrfs
+[2026-01-29 14:03:27] - DEBUG - Could not determine the filesystem: None
+[2026-01-29 14:05:59] - DEBUG - load mirrors: True
+[2026-01-29 14:20:34] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/__init__.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/custom.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktop.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/minimal.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/server.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/tailored.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/xorg.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/__init__.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/awesome.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/bspwm.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/budgie.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/cinnamon.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/cosmic.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/cutefish.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/deepin.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/enlightenment.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/gnome.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/hyprland.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/i3.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/labwc.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/lxqt.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/mate.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/niri.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/plasma.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/qtile.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/river.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/sway.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/xfce4.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/desktops/xmonad.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/__init__.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/cockpit.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/docker.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/httpd.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/lighttpd.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/mariadb.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/nginx.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/postgresql.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/sshd.py
+[2026-01-29 14:20:35] - DEBUG - Importing profile: /usr/lib/python3.13/site-packages/archinstall/default_profiles/servers/tomcat.py
+[2026-01-29 14:21:19] - DEBUG - Creating yescrypt hash with rounds 5
+[2026-01-29 14:21:31] - DEBUG - Creating yescrypt hash with rounds 5
+[2026-01-29 14:31:31] - DEBUG -  -- Chosen configuration --
+[2026-01-29 14:31:31] - DEBUG - {
+    "app_config": {
+        "audio_config": {
+            "audio": "pulseaudio"
+        },
+        "bluetooth_config": {
+            "enabled": false
+        },
+        "print_service_config": {
+            "enabled": false
+        }
+    },
+    "archinstall-language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Grub",
+        "removable": true,
+        "uki": false
+    },
+    "custom_commands": [],
+    "disk_config": {
+        "btrfs_options": {
+            "snapshot_config": {
+                "type": "Snapper"
+            }
+        },
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot",
+                            "esp"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "34be5642-d51b-41d8-8fb0-7303a1174d67",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [
+                            {
+                                "mountpoint": "/",
+                                "name": "@"
+                            },
+                            {
+                                "mountpoint": "/home",
+                                "name": "@home"
+                            },
+                            {
+                                "mountpoint": "/var/log",
+                                "name": "@log"
+                            },
+                            {
+                                "mountpoint": "/var/cache/pacman/pkg",
+                                "name": "@pkg"
+                            }
+                        ],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "btrfs",
+                        "mount_options": [
+                            "compress=zstd"
+                        ],
+                        "mountpoint": null,
+                        "obj_id": "e3399d7e-10f3-49fa-858c-893410ba0555",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 238980956160
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ],
+        "lvm_config": {
+            "config_type": "default",
+            "vol_groups": [
+                {
+                    "lvm_pvs": [
+                        "e3399d7e-10f3-49fa-858c-893410ba0555"
+                    ],
+                    "name": "ArchinstallVg",
+                    "volumes": [
+                        {
+                            "btrfs": [
+                                {
+                                    "mountpoint": "/",
+                                    "name": "@"
+                                },
+                                {
+                                    "mountpoint": "/home",
+                                    "name": "@home"
+                                },
+                                {
+                                    "mountpoint": "/var/log",
+                                    "name": "@log"
+                                },
+                                {
+                                    "mountpoint": "/var/cache/pacman/pkg",
+                                    "name": "@pkg"
+                                }
+                            ],
+                            "fs_type": "btrfs",
+                            "length": {
+                                "sector_size": {
+                                    "unit": "B",
+                                    "value": 512
+                                },
+                                "unit": "GiB",
+                                "value": 32
+                            },
+                            "mount_options": [
+                                "compress=zstd"
+                            ],
+                            "mountpoint": "/",
+                            "name": "root",
+                            "obj_id": "2c63df32-3f15-4049-82c8-78c2c6903157",
+                            "status": "create"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "hostname": "archlinux",
+    "kernels": [
+        "linux",
+        "linux-lts"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "United States": [
+                "http://mirrors.rit.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.rit.edu/archlinux/$repo/os/$arch",
+                "http://mirror.umd.edu/archlinux/$repo/os/$arch",
+                "https://mirror.umd.edu/archlinux/$repo/os/$arch",
+                "http://ftp.osuosl.org/pub/archlinux/$repo/os/$arch",
+                "https://ftp.osuosl.org/pub/archlinux/$repo/os/$arch",
+                "http://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch",
+                "http://mirrors.xmission.com/archlinux/$repo/os/$arch",
+                "http://mirrors.kernel.org/archlinux/$repo/os/$arch",
+                "https://mirrors.kernel.org/archlinux/$repo/os/$arch",
+                "http://mirrors.cat.pdx.edu/archlinux/$repo/os/$arch",
+                "http://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch",
+                "http://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch",
+                "https://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch",
+                "https://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch",
+                "http://mirrors.gigenet.com/archlinux/$repo/os/$arch",
+                "http://mirrors.liquidweb.com/archlinux/$repo/os/$arch",
+                "http://mirror.metrocast.net/archlinux/$repo/os/$arch",
+                "http://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "http://iad.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "http://ord.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://iad.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://ord.mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "http://mirror.vtti.vt.edu/archlinux/$repo/os/$arch",
+                "http://arch.mirror.constant.com/$repo/os/$arch",
+                "https://arch.mirror.constant.com/$repo/os/$arch",
+                "http://mirrors.acm.wpi.edu/archlinux/$repo/os/$arch",
+                "http://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch",
+                "http://arlm.tyzoid.com/$repo/os/$arch",
+                "https://arlm.tyzoid.com/$repo/os/$arch",
+                "http://mirror.math.princeton.edu/pub/archlinux/$repo/os/$arch",
+                "http://us.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://us.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "http://mirror.cs.vt.edu/pub/ArchLinux/$repo/os/$arch",
+                "http://mirrors.sonic.net/archlinux/$repo/os/$arch",
+                "https://mirrors.sonic.net/archlinux/$repo/os/$arch",
+                "http://distro.ibiblio.org/archlinux/$repo/os/$arch",
+                "http://repo.miserver.it.umich.edu/archlinux/$repo/os/$arch",
+                "http://mirrors.xtom.com/archlinux/$repo/os/$arch",
+                "https://mirrors.xtom.com/archlinux/$repo/os/$arch",
+                "http://mirror.siena.edu/archlinux/$repo/os/$arch",
+                "http://repo.ialab.dsu.edu/archlinux/$repo/os/$arch",
+                "https://repo.ialab.dsu.edu/archlinux/$repo/os/$arch",
+                "http://iad.mirrors.misaka.one/archlinux/$repo/os/$arch",
+                "https://iad.mirrors.misaka.one/archlinux/$repo/os/$arch",
+                "http://mirror.arizona.edu/archlinux/$repo/os/$arch",
+                "https://mirror.arizona.edu/archlinux/$repo/os/$arch",
+                "http://archmirror1.octyl.net/$repo/os/$arch",
+                "https://archmirror1.octyl.net/$repo/os/$arch",
+                "http://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch",
+                "https://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch",
+                "http://mirrors.mit.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.mit.edu/archlinux/$repo/os/$arch",
+                "http://arch.hu.fo/archlinux/$repo/os/$arch",
+                "https://arch.hu.fo/archlinux/$repo/os/$arch",
+                "https://zxcvfdsa.com/arch/$repo/os/$arch",
+                "https://mirror.theash.xyz/arch/$repo/os/$arch",
+                "http://mirror.clarkson.edu/archlinux/$repo/os/$arch",
+                "http://mirrors.bloomu.edu/archlinux/$repo/os/$arch",
+                "https://mirrors.bloomu.edu/archlinux/$repo/os/$arch",
+                "http://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://coresite.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://forksystems.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://mirror.fcix.net/archlinux/$repo/os/$arch",
+                "http://nnenix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://nocix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://ohioix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://opencolo.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://southfront.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://volico.mm.fcix.net/archlinux/$repo/os/$arch",
+                "http://ziply.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://coresite.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://forksystems.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://mirror.fcix.net/archlinux/$repo/os/$arch",
+                "https://nnenix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://nocix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://ohioix.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://opencolo.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://southfront.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://volico.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://ziply.mm.fcix.net/archlinux/$repo/os/$arch",
+                "https://losangeles.mirror.pkgbuild.com/$repo/os/$arch",
+                "http://mirrors.vectair.net/archlinux/$repo/os/$arch",
+                "https://mirrors.vectair.net/archlinux/$repo/os/$arch",
+                "https://arch.mirror.k0.ae/$repo/os/$arch",
+                "https://mirror.zackmyers.io/archlinux/$repo/os/$arch",
+                "http://wcbmedia.io:8000/$repo/os/$arch",
+                "https://m.lqy.me/arch/$repo/os/$arch",
+                "http://mirror.adectra.com/archlinux/$repo/os/$arch",
+                "https://mirror.adectra.com/archlinux/$repo/os/$arch",
+                "https://arch.goober.cloud/$repo/os/$arch",
+                "https://mirror.pilotfiber.com/archlinux/$repo/os/$arch",
+                "http://mirrors.iu13.net/archlinux/$repo/os/$arch",
+                "https://mirrors.iu13.net/archlinux/$repo/os/$arch",
+                "http://mirror.colonelhosting.com/archlinux/$repo/os/$arch",
+                "https://mirror.colonelhosting.com/archlinux/$repo/os/$arch",
+                "https://us.arch.niranjan.co/$repo/os/$arch",
+                "https://arch.mirror.marcusspencer.us:4443/archlinux/$repo/os/$arch",
+                "https://us-mnz.soulharsh007.dev/archlinux/$repo/os/$arch",
+                "https://mirror.akane.network/archmirror/$repo/os/$arch",
+                "http://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch",
+                "https://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch",
+                "http://arch.miningtcup.me/$repo/os/$arch",
+                "https://arch.miningtcup.me/$repo/os/$arch",
+                "http://mirrors.smeal.xyz/arch-linux/$repo/os/$arch",
+                "https://mirrors.smeal.xyz/arch-linux/$repo/os/$arch",
+                "https://arch-mirror.brightlight.today/$repo/os/$arch",
+                "https://mirrors.lahansons.com/archlinux/$repo/os/$arch",
+                "https://mirror.givebytes.net/archlinux/$repo/os/$arch",
+                "https://mirrors.shr.cx/arch/$repo/os/$arch",
+                "http://mirror.cs.odu.edu/archlinux/$repo/os/$arch",
+                "https://mirror.cs.odu.edu/archlinux/$repo/os/$arch",
+                "http://repo.customcomputercare.com/archlinux/$repo/os/$arch",
+                "https://repo.customcomputercare.com/archlinux/$repo/os/$arch",
+                "http://arch.hugeblank.dev/$repo/os/$arch",
+                "https://arch.hugeblank.dev/$repo/os/$arch",
+                "https://mirrors.logal.dev/archlinux/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": []
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [],
+    "parallel_downloads": 0,
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "ly",
+        "profile": {
+            "custom_settings": {
+                "i3-wm": {}
+            },
+            "details": [
+                "i3-wm"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
+    "timezone": "America/Santo_Domingo",
+    "version": "3.0.15"
+}
+[2026-01-29 14:31:44] - DEBUG - Unmounting all existing partitions: /dev/sda
+[2026-01-29 14:31:44] - DEBUG - Unmounting: /dev/sda1
+[2026-01-29 14:31:44] - INFO - Wiping partitions and metadata: /dev/sda
+[2026-01-29 14:31:44] - INFO - Creating partitions: /dev/sda
+[2026-01-29 14:31:44] - DEBUG - 	Type: primary
+[2026-01-29 14:31:44] - DEBUG - 	Filesystem: fat32
+[2026-01-29 14:31:44] - DEBUG - 	Geometry: 2048 start sector, 2097152 length
+[2026-01-29 14:31:45] - DEBUG - 	Type: primary
+[2026-01-29 14:31:45] - DEBUG - 	Filesystem: btrfs
+[2026-01-29 14:31:45] - DEBUG - 	Geometry: 2099200 start sector, 466759680 length
+[2026-01-29 14:31:45] - DEBUG - Wiping signatures from: /dev/sda1
+[2026-01-29 14:31:45] - DEBUG - Wiping signatures from: /dev/sda2
+[2026-01-29 14:31:45] - DEBUG - Formatting boot partition: /dev/sda1
+[2026-01-29 14:31:45] - DEBUG - Formatting filesystem: mkfs.fat -F 32 /dev/sda1
+[2026-01-29 14:31:46] - DEBUG - partition information found: {"name":"sda1","path":"/dev/sda1","pkname":"sda","log_sec":512,"size":"1024 MiB","pttype":"gpt","ptuuid":"d5e28adf-b7f9-4d80-bd86-b500ac57bb90","rota":false,"tran":null,"partn":1,"partuuid":"ef84764b-6c19-4036-9745-94be3f775683","parttype":"c12a7328-f81f-11d2-ba4b-00a0c93ec93b","uuid":"F51C-D0B1","fstype":"vfat","fsver":"FAT32","fsavail":null,"fsuse_percentage":null,"type":"part","mountpoint":null,"mountpoints":[],"fsroots":[],"children":[]}
+[2026-01-29 14:31:46] - INFO - Setting up LVM config...
+[2026-01-29 14:31:46] - DEBUG - Creating LVM PVS: pvcreate -f --yes /dev/sda2
+[2026-01-29 14:31:46] - DEBUG - Creating LVM group: vgcreate --yes --force ArchinstallVg /dev/sda2
+[2026-01-29 14:31:46] - DEBUG - LVM info:   {
+      "report": [
+          {
+              "vg": [
+                  {"vg_name":"ArchinstallVg", "vg_uuid":"IUafJx-MjtK-KQOa-cNLd-a1St-UaD4-PJGPaZ", "vg_size":"238978859008B"}
+              ]
+          }
+      ]
+      ,
+      "log": [
+      ]
+  }
+[2026-01-29 14:31:46] - DEBUG - vg: ArchinstallVg, vol: root, offset: Size(value=204619120640, unit=<Unit.B: 1>, sector_size=SectorSize(value=512, unit=<Unit.B: 1>))
+[2026-01-29 14:31:46] - DEBUG - Creating volume: lvcreate --yes -L 170259382272B ArchinstallVg -n root
+[2026-01-29 14:31:46] - DEBUG - Fetching LVM volume info
+[2026-01-29 14:31:46] - DEBUG - LVM info:   {
+      "report": [
+          {
+              "lv": [
+                  {"lv_name":"root", "vg_name":"ArchinstallVg", "lv_attr":"-wi-a-----", "lv_size":"170259382272B", "pool_lv":"", "origin":"", "data_percent":"", "metadata_percent":"", "move_pv":"", "mirror_log":"", "copy_percent":"", "convert_lv":""}
+              ]
+          }
+      ]
+      ,
+      "log": [
+      ]
+  }
+[2026-01-29 14:31:46] - DEBUG - Formatting filesystem: mkfs.btrfs -f /dev/ArchinstallVg/root
+[2026-01-29 14:32:09] - INFO - Creating subvolumes: /dev/ArchinstallVg/root
+[2026-01-29 14:32:09] - DEBUG - Mounting /dev/ArchinstallVg/root: mount /dev/ArchinstallVg/root /mnt/arch_btrfs
+[2026-01-29 14:32:09] - DEBUG - Creating subvolume: @
+[2026-01-29 14:32:09] - DEBUG - Creating subvolume: @home
+[2026-01-29 14:32:10] - DEBUG - Creating subvolume: @log
+[2026-01-29 14:32:10] - DEBUG - Creating subvolume: @pkg
+[2026-01-29 14:32:10] - DEBUG - Partition /dev/ArchinstallVg/root is currently mounted at: ['/mnt/arch_btrfs']
+[2026-01-29 14:32:10] - DEBUG - Unmounting mountpoint: /mnt/arch_btrfs
+[2026-01-29 14:32:10] - INFO - Starting installation...
+[2026-01-29 14:32:10] - DEBUG - Mounting ordered layout
+[2026-01-29 14:32:10] - DEBUG - Volume group ArchinstallVg is already active (not exported), skipping import
+[2026-01-29 14:32:10] - DEBUG - lvchange volume: lvchange -a y /dev/ArchinstallVg/root
+[2026-01-29 14:32:10] - DEBUG - Mounting LVM layout
+[2026-01-29 14:32:10] - DEBUG - Mounting /dev/ArchinstallVg/root: mount -o compress=zstd,subvol=@ /dev/ArchinstallVg/root /mnt
+[2026-01-29 14:32:10] - DEBUG - Mounting /dev/ArchinstallVg/root: mount -o compress=zstd,subvol=@home /dev/ArchinstallVg/root /mnt/home
+[2026-01-29 14:32:10] - DEBUG - Mounting /dev/ArchinstallVg/root: mount -o compress=zstd,subvol=@pkg /dev/ArchinstallVg/root /mnt/var/cache/pacman/pkg
+[2026-01-29 14:32:10] - DEBUG - Mounting /dev/ArchinstallVg/root: mount -o compress=zstd,subvol=@log /dev/ArchinstallVg/root /mnt/var/log
+[2026-01-29 14:32:10] - DEBUG - Mounting partition layout
+[2026-01-29 14:32:10] - DEBUG - Mounting /dev/sda1: mount /dev/sda1 /mnt/boot
+[2026-01-29 14:32:10] - INFO - Waiting for time sync (timedatectl show) to complete.
+[2026-01-29 14:32:11] - INFO - Waiting for automatic mirror selection (reflector) to complete.
+[2026-01-29 14:32:11] - INFO - Waiting for Arch Linux keyring sync (archlinux-keyring-wkd-sync) to complete.
+[2026-01-29 14:32:11] - DEBUG - Setting mirrors on live system
+[2026-01-29 14:32:11] - INFO - Sorting your selected mirror list based on the speed between you and the individual mirrors (this might take a while)
+[2026-01-29 14:32:11] - DEBUG - Checking download speed of mirrors.rit.edu[1.4106236408740669] by fetching: http://mirrors.rit.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:12] - DEBUG -     speed: 385898.8235135522 (0.36MiB/s)
+[2026-01-29 14:32:12] - DEBUG - Checking download speed of mirrors.rit.edu[0.8649538632482273] by fetching: https://mirrors.rit.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:12] - DEBUG -     speed: 478463.48582587304 (0.45MiB/s)
+[2026-01-29 14:32:12] - DEBUG - Checking download speed of mirror.umd.edu[9.99824948420819] by fetching: http://mirror.umd.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:13] - DEBUG -     speed: 517397.7860964285 (0.49MiB/s)
+[2026-01-29 14:32:13] - DEBUG - Checking download speed of mirror.umd.edu[10.111770111510438] by fetching: https://mirror.umd.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:13] - DEBUG -     speed: 844964.3520226693 (0.8MiB/s)
+[2026-01-29 14:32:13] - DEBUG - Checking download speed of ftp.osuosl.org[6.6109245072606075] by fetching: http://ftp.osuosl.org/pub/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:14] - DEBUG -     speed: 227316.45062342478 (0.21MiB/s)
+[2026-01-29 14:32:14] - DEBUG - Checking download speed of ftp.osuosl.org[6.844346200089425] by fetching: https://ftp.osuosl.org/pub/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:16] - DEBUG -     speed: 181741.89059162466 (0.17MiB/s)
+[2026-01-29 14:32:16] - DEBUG - Checking download speed of mirrors.lug.mtu.edu[3.350101528099706] by fetching: http://mirrors.lug.mtu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:17] - DEBUG -     speed: 415362.987110348 (0.39MiB/s)
+[2026-01-29 14:32:17] - DEBUG - Checking download speed of mirrors.lug.mtu.edu[3.441558949914491] by fetching: https://mirrors.lug.mtu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:17] - DEBUG -     speed: 467258.92463484505 (0.44MiB/s)
+[2026-01-29 14:32:17] - DEBUG - Checking download speed of mirrors.xmission.com[2.8977415287493002] by fetching: http://mirrors.xmission.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:18] - DEBUG -     speed: 376921.8391746303 (0.35MiB/s)
+[2026-01-29 14:32:18] - DEBUG - Checking download speed of mirrors.kernel.org[1.112866502756188] by fetching: http://mirrors.kernel.org/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:19] - DEBUG -     speed: 513278.21365281346 (0.48MiB/s)
+[2026-01-29 14:32:19] - DEBUG - Checking download speed of mirrors.kernel.org[1.2341131767979132] by fetching: https://mirrors.kernel.org/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:19] - DEBUG -     speed: 747055.3856191146 (0.71MiB/s)
+[2026-01-29 14:32:19] - DEBUG - Checking download speed of mirrors.cat.pdx.edu[1.133457357103738] by fetching: http://mirrors.cat.pdx.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:20] - DEBUG -     speed: 235455.23962712483 (0.22MiB/s)
+[2026-01-29 14:32:20] - DEBUG - Checking download speed of mirror.sfo12.us.leaseweb.net[0.8411567152194778] by fetching: http://mirror.sfo12.us.leaseweb.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:21] - DEBUG -     speed: 327906.2529790409 (0.31MiB/s)
+[2026-01-29 14:32:21] - DEBUG - Checking download speed of mirror.wdc1.us.leaseweb.net[0.7507720807808974] by fetching: http://mirror.wdc1.us.leaseweb.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:21] - DEBUG -     speed: 544353.4163767613 (0.51MiB/s)
+[2026-01-29 14:32:21] - DEBUG - Checking download speed of mirror.sfo12.us.leaseweb.net[1.2498525459332823] by fetching: https://mirror.sfo12.us.leaseweb.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:22] - DEBUG -     speed: 487532.1071629632 (0.46MiB/s)
+[2026-01-29 14:32:22] - DEBUG - Checking download speed of mirror.wdc1.us.leaseweb.net[1.1899904619948314] by fetching: https://mirror.wdc1.us.leaseweb.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:23] - DEBUG -     speed: 707163.2325250739 (0.67MiB/s)
+[2026-01-29 14:32:23] - DEBUG - Checking download speed of mirrors.gigenet.com[2.7498304176371473] by fetching: http://mirrors.gigenet.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:25] - DEBUG -     speed: 275637.7112136409 (0.26MiB/s)
+[2026-01-29 14:32:25] - DEBUG - Checking download speed of mirrors.liquidweb.com[8.720109773916548] by fetching: http://mirrors.liquidweb.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:26] - DEBUG -     speed: 406355.5744825824 (0.38MiB/s)
+[2026-01-29 14:32:26] - DEBUG - Checking download speed of mirror.metrocast.net[8.157625352704178] by fetching: http://mirror.metrocast.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:26] - DEBUG -     speed: 332139.4914291718 (0.31MiB/s)
+[2026-01-29 14:32:26] - DEBUG - Checking download speed of dfw.mirror.rackspace.com[5.787973935034911] by fetching: http://dfw.mirror.rackspace.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:27] - DEBUG -     speed: 514880.9963667467 (0.49MiB/s)
+[2026-01-29 14:32:27] - DEBUG - Checking download speed of iad.mirror.rackspace.com[5.475814837157079] by fetching: http://iad.mirror.rackspace.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:27] - DEBUG -     speed: 513399.9304533584 (0.48MiB/s)
+[2026-01-29 14:32:27] - DEBUG - Checking download speed of ord.mirror.rackspace.com[2.5257949897923355] by fetching: http://ord.mirror.rackspace.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:28] - DEBUG -     speed: 301454.02861901745 (0.28MiB/s)
+[2026-01-29 14:32:28] - DEBUG - Checking download speed of dfw.mirror.rackspace.com[5.626025227392119] by fetching: https://dfw.mirror.rackspace.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:29] - DEBUG -     speed: 479510.28722026176 (0.45MiB/s)
+[2026-01-29 14:32:29] - DEBUG - Checking download speed of iad.mirror.rackspace.com[5.4626144987715275] by fetching: https://iad.mirror.rackspace.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:30] - DEBUG -     speed: 519273.847766278 (0.49MiB/s)
+[2026-01-29 14:32:30] - DEBUG - Checking download speed of ord.mirror.rackspace.com[2.423503926981357] by fetching: https://ord.mirror.rackspace.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:31] - DEBUG -     speed: 304367.38751106075 (0.29MiB/s)
+[2026-01-29 14:32:31] - DEBUG - Checking download speed of mirror.vtti.vt.edu[5.520197360834058] by fetching: http://mirror.vtti.vt.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:31] - DEBUG -     speed: 483555.75842775713 (0.46MiB/s)
+[2026-01-29 14:32:31] - DEBUG - Checking download speed of arch.mirror.constant.com[0.27314135223168173] by fetching: http://arch.mirror.constant.com/core/os/x86_64/core.db
+[2026-01-29 14:32:31] - DEBUG -     speed: 509313.82126036007 (0.48MiB/s)
+[2026-01-29 14:32:31] - DEBUG - Checking download speed of arch.mirror.constant.com[0.3487398523546198] by fetching: https://arch.mirror.constant.com/core/os/x86_64/core.db
+[2026-01-29 14:32:32] - DEBUG -     speed: 707755.7454734257 (0.67MiB/s)
+[2026-01-29 14:32:32] - DEBUG - Checking download speed of mirrors.acm.wpi.edu[4.371935295326646] by fetching: http://mirrors.acm.wpi.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:33] - DEBUG -     speed: 189240.07126385364 (0.18MiB/s)
+[2026-01-29 14:32:33] - DEBUG - Checking download speed of mirrors.ocf.berkeley.edu[2.0187202505234954] by fetching: http://mirrors.ocf.berkeley.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:34] - DEBUG -     speed: 311761.61619584094 (0.29MiB/s)
+[2026-01-29 14:32:34] - DEBUG - Checking download speed of mirrors.ocf.berkeley.edu[2.1984412277271765] by fetching: https://mirrors.ocf.berkeley.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:35] - DEBUG -     speed: 507904.11304845824 (0.48MiB/s)
+[2026-01-29 14:32:35] - DEBUG - Checking download speed of arlm.tyzoid.com[0.3824390678210451] by fetching: http://arlm.tyzoid.com/core/os/x86_64/core.db
+[2026-01-29 14:32:35] - DEBUG -     speed: 586914.2864302548 (0.55MiB/s)
+[2026-01-29 14:32:35] - DEBUG - Checking download speed of arlm.tyzoid.com[0.6570103382585424] by fetching: https://arlm.tyzoid.com/core/os/x86_64/core.db
+[2026-01-29 14:32:35] - DEBUG -     speed: 579728.521522525 (0.55MiB/s)
+[2026-01-29 14:32:35] - DEBUG - Checking download speed of mirror.math.princeton.edu[0.9534188511092693] by fetching: http://mirror.math.princeton.edu/pub/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:36] - DEBUG -     speed: 236014.43119436243 (0.22MiB/s)
+[2026-01-29 14:32:36] - DEBUG - Checking download speed of us.mirrors.cicku.me[1.0634470933229236] by fetching: http://us.mirrors.cicku.me/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:37] - DEBUG -     speed: 1275052.1418302124 (1.21MiB/s)
+[2026-01-29 14:32:37] - DEBUG - Checking download speed of us.mirrors.cicku.me[1.2579611450863872] by fetching: https://us.mirrors.cicku.me/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:37] - DEBUG -     speed: 1517209.816940848 (1.44MiB/s)
+[2026-01-29 14:32:37] - DEBUG - Checking download speed of mirror.cs.vt.edu[7.529913513807107] by fetching: http://mirror.cs.vt.edu/pub/ArchLinux/core/os/x86_64/core.db
+[2026-01-29 14:32:37] - DEBUG -     speed: 495452.63639676577 (0.47MiB/s)
+[2026-01-29 14:32:37] - DEBUG - Checking download speed of mirrors.sonic.net[1.3790638122784873] by fetching: http://mirrors.sonic.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:38] - DEBUG -     speed: 336622.38847800397 (0.32MiB/s)
+[2026-01-29 14:32:38] - DEBUG - Checking download speed of mirrors.sonic.net[1.7968766313829898] by fetching: https://mirrors.sonic.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:39] - DEBUG -     speed: 332455.796181796 (0.31MiB/s)
+[2026-01-29 14:32:39] - DEBUG - Checking download speed of distro.ibiblio.org[12.675263364427611] by fetching: http://distro.ibiblio.org/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:40] - DEBUG -     speed: 476717.17502164916 (0.45MiB/s)
+[2026-01-29 14:32:40] - DEBUG - Checking download speed of repo.miserver.it.umich.edu[16.350021290982287] by fetching: http://repo.miserver.it.umich.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:41] - DEBUG -     speed: 301191.8289472992 (0.28MiB/s)
+[2026-01-29 14:32:41] - DEBUG - Checking download speed of mirrors.xtom.com[1.1434983239175973] by fetching: http://mirrors.xtom.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:42] - DEBUG -     speed: 314874.02563991316 (0.3MiB/s)
+[2026-01-29 14:32:42] - DEBUG - Checking download speed of mirrors.xtom.com[1.3577965305367228] by fetching: https://mirrors.xtom.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:42] - DEBUG -     speed: 530527.1460665828 (0.5MiB/s)
+[2026-01-29 14:32:42] - DEBUG - Checking download speed of mirror.siena.edu[3.7330761297295076] by fetching: http://mirror.siena.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:43] - DEBUG -     speed: 490138.3999429264 (0.46MiB/s)
+[2026-01-29 14:32:43] - DEBUG - Checking download speed of repo.ialab.dsu.edu[1.6821033129292946] by fetching: http://repo.ialab.dsu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:44] - DEBUG -     speed: 266854.82393970486 (0.25MiB/s)
+[2026-01-29 14:32:44] - DEBUG - Checking download speed of repo.ialab.dsu.edu[1.6345432305632424] by fetching: https://repo.ialab.dsu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:45] - DEBUG -     speed: 425365.4336988457 (0.4MiB/s)
+[2026-01-29 14:32:45] - DEBUG - Checking download speed of iad.mirrors.misaka.one[0.9485664384216845] by fetching: http://iad.mirrors.misaka.one/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:46] - DEBUG -     speed: 480790.3653489967 (0.45MiB/s)
+[2026-01-29 14:32:46] - DEBUG - Checking download speed of iad.mirrors.misaka.one[1.0260213348481555] by fetching: https://iad.mirrors.misaka.one/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:46] - DEBUG -     speed: 728911.2049160848 (0.69MiB/s)
+[2026-01-29 14:32:46] - DEBUG - Checking download speed of mirror.arizona.edu[1.372001818607812] by fetching: http://mirror.arizona.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:47] - DEBUG -     speed: 390831.16635669407 (0.37MiB/s)
+[2026-01-29 14:32:47] - DEBUG - Checking download speed of mirror.arizona.edu[1.4871366351786162] by fetching: https://mirror.arizona.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:47] - DEBUG -     speed: 399337.7155292673 (0.38MiB/s)
+[2026-01-29 14:32:47] - DEBUG - Checking download speed of archmirror1.octyl.net[1.106173621577097] by fetching: http://archmirror1.octyl.net/core/os/x86_64/core.db
+[2026-01-29 14:32:48] - DEBUG -     speed: 294642.1811527905 (0.28MiB/s)
+[2026-01-29 14:32:48] - DEBUG - Checking download speed of archmirror1.octyl.net[1.2623071027507842] by fetching: https://archmirror1.octyl.net/core/os/x86_64/core.db
+[2026-01-29 14:32:49] - DEBUG -     speed: 427027.2088310978 (0.4MiB/s)
+[2026-01-29 14:32:49] - DEBUG - Checking download speed of plug-mirror.rcac.purdue.edu[4.525403596207439] by fetching: http://plug-mirror.rcac.purdue.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:50] - DEBUG -     speed: 457984.61481029826 (0.43MiB/s)
+[2026-01-29 14:32:50] - DEBUG - Checking download speed of plug-mirror.rcac.purdue.edu[4.790581732326836] by fetching: https://plug-mirror.rcac.purdue.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:50] - DEBUG -     speed: 825524.7285608317 (0.78MiB/s)
+[2026-01-29 14:32:50] - DEBUG - Checking download speed of mirrors.mit.edu[1.7934342536435555] by fetching: http://mirrors.mit.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:51] - DEBUG -     speed: 457180.44222983497 (0.43MiB/s)
+[2026-01-29 14:32:51] - DEBUG - Checking download speed of mirrors.mit.edu[1.827562870445953] by fetching: https://mirrors.mit.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:51] - DEBUG -     speed: 476656.3180729133 (0.45MiB/s)
+[2026-01-29 14:32:51] - DEBUG - Checking download speed of arch.hu.fo[0.9076399287800176] by fetching: http://arch.hu.fo/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:52] - DEBUG -     speed: 313928.46087578486 (0.29MiB/s)
+[2026-01-29 14:32:52] - DEBUG - Checking download speed of arch.hu.fo[1.159197520727615] by fetching: https://arch.hu.fo/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:53] - DEBUG -     speed: 503348.93033397023 (0.48MiB/s)
+[2026-01-29 14:32:53] - DEBUG - Checking download speed of zxcvfdsa.com[1.6654747844359798] by fetching: https://zxcvfdsa.com/arch/core/os/x86_64/core.db
+[2026-01-29 14:32:54] - DEBUG -     speed: 480495.3560001977 (0.45MiB/s)
+[2026-01-29 14:32:54] - DEBUG - Checking download speed of mirror.theash.xyz[1.0558313488967208] by fetching: https://mirror.theash.xyz/arch/core/os/x86_64/core.db
+[2026-01-29 14:32:54] - DEBUG -     speed: <undetermined> (HTTP Error 403: Forbidden), skip
+[2026-01-29 14:32:54] - DEBUG - Checking download speed of mirror.clarkson.edu[2.330247082447687] by fetching: http://mirror.clarkson.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:55] - DEBUG -     speed: 400847.5200940992 (0.38MiB/s)
+[2026-01-29 14:32:55] - DEBUG - Checking download speed of mirrors.bloomu.edu[4.266147832696606] by fetching: http://mirrors.bloomu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:55] - DEBUG -     speed: 459648.6258361887 (0.43MiB/s)
+[2026-01-29 14:32:55] - DEBUG - Checking download speed of mirrors.bloomu.edu[4.202789223476327] by fetching: https://mirrors.bloomu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:56] - DEBUG -     speed: 491921.2063410233 (0.46MiB/s)
+[2026-01-29 14:32:56] - DEBUG - Checking download speed of codingflyboy.mm.fcix.net[0.8989170279933316] by fetching: http://codingflyboy.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:56] - DEBUG -     speed: 308384.21781214705 (0.29MiB/s)
+[2026-01-29 14:32:56] - DEBUG - Checking download speed of coresite.mm.fcix.net[0.8075845106835824] by fetching: http://coresite.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:57] - DEBUG -     speed: 461300.8184466524 (0.43MiB/s)
+[2026-01-29 14:32:57] - DEBUG - Checking download speed of forksystems.mm.fcix.net[0.8318812869934631] by fetching: http://forksystems.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:57] - DEBUG -     speed: 473629.67282460624 (0.45MiB/s)
+[2026-01-29 14:32:57] - DEBUG - Checking download speed of irltoolkit.mm.fcix.net[0.9578810447028578] by fetching: http://irltoolkit.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:58] - DEBUG -     speed: 357725.70122590434 (0.34MiB/s)
+[2026-01-29 14:32:58] - DEBUG - Checking download speed of mirror.fcix.net[0.9151590555464031] by fetching: http://mirror.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:59] - DEBUG -     speed: 328302.79153129953 (0.31MiB/s)
+[2026-01-29 14:32:59] - DEBUG - Checking download speed of nnenix.mm.fcix.net[0.8290947698055208] by fetching: http://nnenix.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:32:59] - DEBUG -     speed: 420372.08822694386 (0.4MiB/s)
+[2026-01-29 14:32:59] - DEBUG - Checking download speed of nocix.mm.fcix.net[0.8526466755758931] by fetching: http://nocix.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:00] - DEBUG -     speed: 483280.0094541894 (0.46MiB/s)
+[2026-01-29 14:33:00] - DEBUG - Checking download speed of ohioix.mm.fcix.net[0.844816279190711] by fetching: http://ohioix.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:00] - DEBUG -     speed: 300411.81264367746 (0.28MiB/s)
+[2026-01-29 14:33:00] - DEBUG - Checking download speed of opencolo.mm.fcix.net[0.939166412641408] by fetching: http://opencolo.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:01] - DEBUG -     speed: 307349.7066200615 (0.29MiB/s)
+[2026-01-29 14:33:01] - DEBUG - Checking download speed of southfront.mm.fcix.net[0.9120724784309501] by fetching: http://southfront.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:02] - DEBUG -     speed: 394357.48193603737 (0.37MiB/s)
+[2026-01-29 14:33:02] - DEBUG - Checking download speed of volico.mm.fcix.net[0.8647892722238562] by fetching: http://volico.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:02] - DEBUG -     speed: 760213.2296247992 (0.72MiB/s)
+[2026-01-29 14:33:02] - DEBUG - Checking download speed of ziply.mm.fcix.net[0.9139901729904162] by fetching: http://ziply.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:03] - DEBUG -     speed: 318819.04931616696 (0.3MiB/s)
+[2026-01-29 14:33:03] - DEBUG - Checking download speed of codingflyboy.mm.fcix.net[1.1044431256295824] by fetching: https://codingflyboy.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:04] - DEBUG -     speed: 504981.74826093175 (0.48MiB/s)
+[2026-01-29 14:33:04] - DEBUG - Checking download speed of coresite.mm.fcix.net[1.0126767425855552] by fetching: https://coresite.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:04] - DEBUG -     speed: 717217.0516264633 (0.68MiB/s)
+[2026-01-29 14:33:04] - DEBUG - Checking download speed of forksystems.mm.fcix.net[0.9411238931077509] by fetching: https://forksystems.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:04] - DEBUG -     speed: 864558.9981073572 (0.82MiB/s)
+[2026-01-29 14:33:04] - DEBUG - Checking download speed of irltoolkit.mm.fcix.net[1.1271858238666157] by fetching: https://irltoolkit.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:05] - DEBUG -     speed: 629188.6214442013 (0.6MiB/s)
+[2026-01-29 14:33:05] - DEBUG - Checking download speed of mirror.fcix.net[1.0911948773207096] by fetching: https://mirror.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:06] - DEBUG -     speed: 515691.0502970424 (0.49MiB/s)
+[2026-01-29 14:33:06] - DEBUG - Checking download speed of nnenix.mm.fcix.net[0.9167189171906447] by fetching: https://nnenix.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:06] - DEBUG -     speed: 605319.3721607496 (0.57MiB/s)
+[2026-01-29 14:33:06] - DEBUG - Checking download speed of nocix.mm.fcix.net[0.967443873956942] by fetching: https://nocix.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:07] - DEBUG -     speed: 658808.0503755794 (0.62MiB/s)
+[2026-01-29 14:33:07] - DEBUG - Checking download speed of ohioix.mm.fcix.net[0.9600557861452406] by fetching: https://ohioix.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:08] - DEBUG -     speed: 455036.5970163489 (0.43MiB/s)
+[2026-01-29 14:33:08] - DEBUG - Checking download speed of opencolo.mm.fcix.net[1.0954735833976867] by fetching: https://opencolo.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:08] - DEBUG -     speed: 468689.1104671153 (0.44MiB/s)
+[2026-01-29 14:33:08] - DEBUG - Checking download speed of southfront.mm.fcix.net[1.4543241906026148] by fetching: https://southfront.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:09] - DEBUG -     speed: 702544.8048495161 (0.66MiB/s)
+[2026-01-29 14:33:09] - DEBUG - Checking download speed of volico.mm.fcix.net[0.9865458768564402] by fetching: https://volico.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:09] - DEBUG -     speed: 1233834.4617197097 (1.17MiB/s)
+[2026-01-29 14:33:09] - DEBUG - Checking download speed of ziply.mm.fcix.net[1.0993905700038251] by fetching: https://ziply.mm.fcix.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:10] - DEBUG -     speed: 536148.4012948216 (0.51MiB/s)
+[2026-01-29 14:33:10] - DEBUG - Checking download speed of losangeles.mirror.pkgbuild.com[0.5671112463639022] by fetching: https://losangeles.mirror.pkgbuild.com/core/os/x86_64/core.db
+[2026-01-29 14:33:11] - DEBUG -     speed: 573582.9872119118 (0.54MiB/s)
+[2026-01-29 14:33:11] - DEBUG - Checking download speed of mirrors.vectair.net[0.7461517955539703] by fetching: http://mirrors.vectair.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:12] - DEBUG -     speed: 567775.8895632512 (0.54MiB/s)
+[2026-01-29 14:33:12] - DEBUG - Checking download speed of mirrors.vectair.net[0.6243556852099975] by fetching: https://mirrors.vectair.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:12] - DEBUG -     speed: 789614.8032591689 (0.75MiB/s)
+[2026-01-29 14:33:12] - DEBUG - Checking download speed of arch.mirror.k0.ae[2.0102353499135974] by fetching: https://arch.mirror.k0.ae/core/os/x86_64/core.db
+[2026-01-29 14:33:13] - DEBUG -     speed: 505925.7969306902 (0.48MiB/s)
+[2026-01-29 14:33:13] - DEBUG - Checking download speed of mirror.zackmyers.io[3.6804217324504434] by fetching: https://mirror.zackmyers.io/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:13] - DEBUG -     speed: 688737.8199447427 (0.65MiB/s)
+[2026-01-29 14:33:13] - DEBUG - Checking download speed of wcbmedia.io[80.61903514947338] by fetching: http://wcbmedia.io:8000/core/os/x86_64/core.db
+[2026-01-29 14:33:14] - DEBUG -     speed: 598476.5188518118 (0.57MiB/s)
+[2026-01-29 14:33:14] - DEBUG - Checking download speed of m.lqy.me[2.9984165378997014] by fetching: https://m.lqy.me/arch/core/os/x86_64/core.db
+[2026-01-29 14:33:14] - DEBUG -     speed: 437690.85536000517 (0.41MiB/s)
+[2026-01-29 14:33:14] - DEBUG - Checking download speed of mirror.adectra.com[1.0807746314129234] by fetching: http://mirror.adectra.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:15] - DEBUG -     speed: 517842.8898769085 (0.49MiB/s)
+[2026-01-29 14:33:15] - DEBUG - Checking download speed of mirror.adectra.com[1.313936224990596] by fetching: https://mirror.adectra.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:16] - DEBUG -     speed: 809965.7578325052 (0.77MiB/s)
+[2026-01-29 14:33:16] - DEBUG - Checking download speed of arch.goober.cloud[24.89037076288781] by fetching: https://arch.goober.cloud/core/os/x86_64/core.db
+[2026-01-29 14:33:16] - DEBUG -     speed: 407273.20370131783 (0.38MiB/s)
+[2026-01-29 14:33:16] - DEBUG - Checking download speed of mirror.pilotfiber.com[14.130326552210642] by fetching: https://mirror.pilotfiber.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:17] - DEBUG -     speed: 795999.299270073 (0.75MiB/s)
+[2026-01-29 14:33:17] - DEBUG - Checking download speed of mirrors.iu13.net[19.75861919306308] by fetching: http://mirrors.iu13.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:17] - DEBUG -     speed: 511788.5723651339 (0.48MiB/s)
+[2026-01-29 14:33:17] - DEBUG - Checking download speed of mirrors.iu13.net[19.916491805998863] by fetching: https://mirrors.iu13.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:19] - DEBUG -     speed: 126525.56681911767 (0.12MiB/s)
+[2026-01-29 14:33:19] - DEBUG - Checking download speed of mirror.colonelhosting.com[1.6718984984386194] by fetching: http://mirror.colonelhosting.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:19] - DEBUG -     speed: 503749.49543930317 (0.48MiB/s)
+[2026-01-29 14:33:19] - DEBUG - Checking download speed of mirror.colonelhosting.com[1.7665909805060673] by fetching: https://mirror.colonelhosting.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:20] - DEBUG -     speed: 737700.107375709 (0.7MiB/s)
+[2026-01-29 14:33:20] - DEBUG - Checking download speed of us.arch.niranjan.co[0.4050976070266557] by fetching: https://us.arch.niranjan.co/core/os/x86_64/core.db
+[2026-01-29 14:33:20] - DEBUG -     speed: 787793.0832879762 (0.75MiB/s)
+[2026-01-29 14:33:20] - DEBUG - Checking download speed of arch.mirror.marcusspencer.us[0.7542579629413022] by fetching: https://arch.mirror.marcusspencer.us:4443/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:21] - DEBUG -     speed: 722988.4402163619 (0.68MiB/s)
+[2026-01-29 14:33:21] - DEBUG - Checking download speed of us-mnz.soulharsh007.dev[1.3916613922269554] by fetching: https://us-mnz.soulharsh007.dev/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:21] - DEBUG -     speed: <undetermined> (HTTP Error 403: Forbidden), skip
+[2026-01-29 14:33:21] - DEBUG - Checking download speed of mirror.akane.network[1.3542621099275334] by fetching: https://mirror.akane.network/archmirror/core/os/x86_64/core.db
+[2026-01-29 14:33:22] - DEBUG -     speed: 457529.55857790925 (0.43MiB/s)
+[2026-01-29 14:33:22] - DEBUG - Checking download speed of mirror.us.cdn-perfprod.com[1.1305433355745391] by fetching: http://mirror.us.cdn-perfprod.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:22] - DEBUG -     speed: 430034.0561905779 (0.41MiB/s)
+[2026-01-29 14:33:22] - DEBUG - Checking download speed of mirror.us.cdn-perfprod.com[1.2592035597241802] by fetching: https://mirror.us.cdn-perfprod.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:23] - DEBUG -     speed: 439529.62274869875 (0.41MiB/s)
+[2026-01-29 14:33:23] - DEBUG - Checking download speed of arch.miningtcup.me[1.5061195387412336] by fetching: http://arch.miningtcup.me/core/os/x86_64/core.db
+[2026-01-29 14:33:24] - DEBUG -     speed: 504188.6833291095 (0.48MiB/s)
+[2026-01-29 14:33:24] - DEBUG - Checking download speed of arch.miningtcup.me[1.1953937670632415] by fetching: https://arch.miningtcup.me/core/os/x86_64/core.db
+[2026-01-29 14:33:25] - DEBUG -     speed: 543925.8942888178 (0.51MiB/s)
+[2026-01-29 14:33:25] - DEBUG - Checking download speed of mirrors.smeal.xyz[13.275186690826256] by fetching: http://mirrors.smeal.xyz/arch-linux/core/os/x86_64/core.db
+[2026-01-29 14:33:26] - DEBUG -     speed: 116954.19579530721 (0.11MiB/s)
+[2026-01-29 14:33:26] - DEBUG - Checking download speed of mirrors.smeal.xyz[13.384967981200445] by fetching: https://mirrors.smeal.xyz/arch-linux/core/os/x86_64/core.db
+[2026-01-29 14:33:27] - DEBUG -     speed: 491764.39985149825 (0.46MiB/s)
+[2026-01-29 14:33:27] - DEBUG - Checking download speed of arch-mirror.brightlight.today[4.496707776147803] by fetching: https://arch-mirror.brightlight.today/core/os/x86_64/core.db
+[2026-01-29 14:33:28] - DEBUG -     speed: 512635.81096743833 (0.48MiB/s)
+[2026-01-29 14:33:28] - DEBUG - Checking download speed of mirrors.lahansons.com[1.8649167086997633] by fetching: https://mirrors.lahansons.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:28] - DEBUG -     speed: <undetermined> (HTTP Error 403: Forbidden), skip
+[2026-01-29 14:33:28] - DEBUG - Checking download speed of mirror.givebytes.net[0.5968888011222231] by fetching: https://mirror.givebytes.net/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:28] - DEBUG -     speed: 765922.075080454 (0.73MiB/s)
+[2026-01-29 14:33:28] - DEBUG - Checking download speed of mirrors.shr.cx[12.76994552721237] by fetching: https://mirrors.shr.cx/arch/core/os/x86_64/core.db
+[2026-01-29 14:33:29] - DEBUG -     speed: 665882.1301187879 (0.63MiB/s)
+[2026-01-29 14:33:29] - DEBUG - Checking download speed of mirror.cs.odu.edu[6.829839385754304] by fetching: http://mirror.cs.odu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:29] - DEBUG -     speed: 467038.27016365866 (0.44MiB/s)
+[2026-01-29 14:33:29] - DEBUG - Checking download speed of mirror.cs.odu.edu[6.845524592509274] by fetching: https://mirror.cs.odu.edu/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:30] - DEBUG -     speed: 751886.7514077715 (0.71MiB/s)
+[2026-01-29 14:33:30] - DEBUG - Checking download speed of repo.customcomputercare.com[1.0468231656036135] by fetching: http://repo.customcomputercare.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:31] - DEBUG -     speed: 351119.2077998893 (0.33MiB/s)
+[2026-01-29 14:33:31] - DEBUG - Checking download speed of repo.customcomputercare.com[1.3399296426336702] by fetching: https://repo.customcomputercare.com/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:31] - DEBUG -     speed: 365650.2047631652 (0.34MiB/s)
+[2026-01-29 14:33:31] - DEBUG - Checking download speed of arch.hugeblank.dev[4.497208724724355] by fetching: http://arch.hugeblank.dev/core/os/x86_64/core.db
+[2026-01-29 14:33:32] - DEBUG -     speed: 335780.4732999032 (0.32MiB/s)
+[2026-01-29 14:33:32] - DEBUG - Checking download speed of arch.hugeblank.dev[4.2014256884657835] by fetching: https://arch.hugeblank.dev/core/os/x86_64/core.db
+[2026-01-29 14:33:33] - DEBUG -     speed: 149779.937921889 (0.14MiB/s)
+[2026-01-29 14:33:33] - DEBUG - Checking download speed of mirrors.logal.dev[0.7537905873799794] by fetching: https://mirrors.logal.dev/archlinux/core/os/x86_64/core.db
+[2026-01-29 14:33:34] - DEBUG -     speed: 575773.6981488807 (0.54MiB/s)
+[2026-01-29 14:33:34] - DEBUG - Mirrorlist:
+
+
+## United States
+Server = https://us.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = http://us.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = https://volico.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://forksystems.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.umd.edu/archlinux/$repo/os/$arch
+Server = https://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch
+Server = https://mirror.adectra.com/archlinux/$repo/os/$arch
+Server = https://mirror.pilotfiber.com/archlinux/$repo/os/$arch
+Server = https://mirrors.vectair.net/archlinux/$repo/os/$arch
+Server = https://us.arch.niranjan.co/$repo/os/$arch
+Server = https://mirror.givebytes.net/archlinux/$repo/os/$arch
+Server = http://volico.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.cs.odu.edu/archlinux/$repo/os/$arch
+Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
+Server = https://mirror.colonelhosting.com/archlinux/$repo/os/$arch
+Server = https://iad.mirrors.misaka.one/archlinux/$repo/os/$arch
+Server = https://arch.mirror.marcusspencer.us:4443/archlinux/$repo/os/$arch
+Server = https://coresite.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://arch.mirror.constant.com/$repo/os/$arch
+Server = https://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://southfront.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.zackmyers.io/archlinux/$repo/os/$arch
+Server = https://mirrors.shr.cx/arch/$repo/os/$arch
+Server = https://nocix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://nnenix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://wcbmedia.io:8000/$repo/os/$arch
+Server = http://arlm.tyzoid.com/$repo/os/$arch
+Server = https://arlm.tyzoid.com/$repo/os/$arch
+Server = https://mirrors.logal.dev/archlinux/$repo/os/$arch
+Server = https://losangeles.mirror.pkgbuild.com/$repo/os/$arch
+Server = http://mirrors.vectair.net/archlinux/$repo/os/$arch
+Server = http://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://arch.miningtcup.me/$repo/os/$arch
+Server = https://ziply.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirrors.xtom.com/archlinux/$repo/os/$arch
+Server = https://iad.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://mirror.adectra.com/archlinux/$repo/os/$arch
+Server = http://mirror.umd.edu/archlinux/$repo/os/$arch
+Server = https://mirror.fcix.net/archlinux/$repo/os/$arch
+Server = http://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://iad.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://mirrors.kernel.org/archlinux/$repo/os/$arch
+Server = https://arch-mirror.brightlight.today/$repo/os/$arch
+Server = http://mirrors.iu13.net/archlinux/$repo/os/$arch
+Server = http://arch.mirror.constant.com/$repo/os/$arch
+Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+Server = https://arch.mirror.k0.ae/$repo/os/$arch
+Server = https://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://arch.miningtcup.me/$repo/os/$arch
+Server = http://mirror.colonelhosting.com/archlinux/$repo/os/$arch
+Server = https://arch.hu.fo/archlinux/$repo/os/$arch
+Server = http://mirror.cs.vt.edu/pub/ArchLinux/$repo/os/$arch
+Server = https://mirrors.bloomu.edu/archlinux/$repo/os/$arch
+Server = https://mirrors.smeal.xyz/arch-linux/$repo/os/$arch
+Server = http://mirror.siena.edu/archlinux/$repo/os/$arch
+Server = https://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = http://mirror.vtti.vt.edu/archlinux/$repo/os/$arch
+Server = http://nocix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://iad.mirrors.misaka.one/archlinux/$repo/os/$arch
+Server = https://zxcvfdsa.com/arch/$repo/os/$arch
+Server = https://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://mirrors.rit.edu/archlinux/$repo/os/$arch
+Server = http://distro.ibiblio.org/archlinux/$repo/os/$arch
+Server = https://mirrors.mit.edu/archlinux/$repo/os/$arch
+Server = http://forksystems.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://opencolo.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
+Server = http://mirror.cs.odu.edu/archlinux/$repo/os/$arch
+Server = http://coresite.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirrors.bloomu.edu/archlinux/$repo/os/$arch
+Server = http://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch
+Server = https://mirror.akane.network/archmirror/$repo/os/$arch
+Server = http://mirrors.mit.edu/archlinux/$repo/os/$arch
+Server = https://ohioix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch
+Server = https://m.lqy.me/arch/$repo/os/$arch
+Server = http://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch
+Server = https://archmirror1.octyl.net/$repo/os/$arch
+Server = https://repo.ialab.dsu.edu/archlinux/$repo/os/$arch
+Server = http://nnenix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
+Server = https://arch.goober.cloud/$repo/os/$arch
+Server = http://mirrors.liquidweb.com/archlinux/$repo/os/$arch
+Server = http://mirror.clarkson.edu/archlinux/$repo/os/$arch
+Server = https://mirror.arizona.edu/archlinux/$repo/os/$arch
+Server = http://southfront.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirror.arizona.edu/archlinux/$repo/os/$arch
+Server = http://mirrors.rit.edu/archlinux/$repo/os/$arch
+Server = http://mirrors.xmission.com/archlinux/$repo/os/$arch
+Server = https://repo.customcomputercare.com/archlinux/$repo/os/$arch
+Server = http://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://repo.customcomputercare.com/archlinux/$repo/os/$arch
+Server = http://mirrors.sonic.net/archlinux/$repo/os/$arch
+Server = http://arch.hugeblank.dev/$repo/os/$arch
+Server = https://mirrors.sonic.net/archlinux/$repo/os/$arch
+Server = http://mirror.metrocast.net/archlinux/$repo/os/$arch
+Server = http://mirror.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = http://ziply.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirrors.xtom.com/archlinux/$repo/os/$arch
+Server = http://arch.hu.fo/archlinux/$repo/os/$arch
+Server = http://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+Server = http://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://opencolo.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://ord.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://ord.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://repo.miserver.it.umich.edu/archlinux/$repo/os/$arch
+Server = http://ohioix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://archmirror1.octyl.net/$repo/os/$arch
+Server = http://mirrors.gigenet.com/archlinux/$repo/os/$arch
+Server = http://repo.ialab.dsu.edu/archlinux/$repo/os/$arch
+Server = http://mirror.math.princeton.edu/pub/archlinux/$repo/os/$arch
+Server = http://mirrors.cat.pdx.edu/archlinux/$repo/os/$arch
+Server = http://ftp.osuosl.org/pub/archlinux/$repo/os/$arch
+Server = http://mirrors.acm.wpi.edu/archlinux/$repo/os/$arch
+Server = https://ftp.osuosl.org/pub/archlinux/$repo/os/$arch
+Server = https://arch.hugeblank.dev/$repo/os/$arch
+Server = https://mirrors.iu13.net/archlinux/$repo/os/$arch
+Server = http://mirrors.smeal.xyz/arch-linux/$repo/os/$arch
+Server = https://mirror.theash.xyz/arch/$repo/os/$arch
+Server = https://us-mnz.soulharsh007.dev/archlinux/$repo/os/$arch
+Server = https://mirrors.lahansons.com/archlinux/$repo/os/$arch
+
+[2026-01-29 14:33:40] - INFO - Installing packages: ['lvm2']
+[2026-01-29 14:34:42] - DEBUG - System is not running in a VM: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
+
+[2026-01-29 14:34:42] - DEBUG - Optional repositories: []
+[2026-01-29 14:34:42] - INFO - Wrote to /mnt/etc/vconsole.conf using us and default8x16
+[2026-01-29 14:34:42] - INFO - Installing packages: ['base', 'sudo', 'linux-firmware', 'linux', 'linux-lts', 'btrfs-progs', 'amd-ucode']
+[2026-01-29 14:46:35] - INFO - Setting keyboard language to us
+[2026-01-29 14:46:41] - INFO - Keyboard language for this installation is now set to: us
+[2026-01-29 14:47:53] - DEBUG - Setting mirrors on target
+[2026-01-29 14:47:53] - INFO - Sorting your selected mirror list based on the speed between you and the individual mirrors (this might take a while)
+[2026-01-29 14:47:53] - DEBUG - Mirrorlist:
+
+
+## United States
+Server = https://us.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = http://us.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = https://volico.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://forksystems.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.umd.edu/archlinux/$repo/os/$arch
+Server = https://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch
+Server = https://mirror.adectra.com/archlinux/$repo/os/$arch
+Server = https://mirror.pilotfiber.com/archlinux/$repo/os/$arch
+Server = https://mirrors.vectair.net/archlinux/$repo/os/$arch
+Server = https://us.arch.niranjan.co/$repo/os/$arch
+Server = https://mirror.givebytes.net/archlinux/$repo/os/$arch
+Server = http://volico.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.cs.odu.edu/archlinux/$repo/os/$arch
+Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
+Server = https://mirror.colonelhosting.com/archlinux/$repo/os/$arch
+Server = https://iad.mirrors.misaka.one/archlinux/$repo/os/$arch
+Server = https://arch.mirror.marcusspencer.us:4443/archlinux/$repo/os/$arch
+Server = https://coresite.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://arch.mirror.constant.com/$repo/os/$arch
+Server = https://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://southfront.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.zackmyers.io/archlinux/$repo/os/$arch
+Server = https://mirrors.shr.cx/arch/$repo/os/$arch
+Server = https://nocix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://nnenix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://wcbmedia.io:8000/$repo/os/$arch
+Server = http://arlm.tyzoid.com/$repo/os/$arch
+Server = https://arlm.tyzoid.com/$repo/os/$arch
+Server = https://mirrors.logal.dev/archlinux/$repo/os/$arch
+Server = https://losangeles.mirror.pkgbuild.com/$repo/os/$arch
+Server = http://mirrors.vectair.net/archlinux/$repo/os/$arch
+Server = http://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://arch.miningtcup.me/$repo/os/$arch
+Server = https://ziply.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirrors.xtom.com/archlinux/$repo/os/$arch
+Server = https://iad.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://mirror.adectra.com/archlinux/$repo/os/$arch
+Server = http://mirror.umd.edu/archlinux/$repo/os/$arch
+Server = https://mirror.fcix.net/archlinux/$repo/os/$arch
+Server = http://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://iad.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://mirrors.kernel.org/archlinux/$repo/os/$arch
+Server = https://arch-mirror.brightlight.today/$repo/os/$arch
+Server = http://mirrors.iu13.net/archlinux/$repo/os/$arch
+Server = http://arch.mirror.constant.com/$repo/os/$arch
+Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+Server = https://arch.mirror.k0.ae/$repo/os/$arch
+Server = https://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://arch.miningtcup.me/$repo/os/$arch
+Server = http://mirror.colonelhosting.com/archlinux/$repo/os/$arch
+Server = https://arch.hu.fo/archlinux/$repo/os/$arch
+Server = http://mirror.cs.vt.edu/pub/ArchLinux/$repo/os/$arch
+Server = https://mirrors.bloomu.edu/archlinux/$repo/os/$arch
+Server = https://mirrors.smeal.xyz/arch-linux/$repo/os/$arch
+Server = http://mirror.siena.edu/archlinux/$repo/os/$arch
+Server = https://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = http://mirror.vtti.vt.edu/archlinux/$repo/os/$arch
+Server = http://nocix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://iad.mirrors.misaka.one/archlinux/$repo/os/$arch
+Server = https://zxcvfdsa.com/arch/$repo/os/$arch
+Server = https://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://mirrors.rit.edu/archlinux/$repo/os/$arch
+Server = http://distro.ibiblio.org/archlinux/$repo/os/$arch
+Server = https://mirrors.mit.edu/archlinux/$repo/os/$arch
+Server = http://forksystems.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://opencolo.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
+Server = http://mirror.cs.odu.edu/archlinux/$repo/os/$arch
+Server = http://coresite.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirrors.bloomu.edu/archlinux/$repo/os/$arch
+Server = http://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch
+Server = https://mirror.akane.network/archmirror/$repo/os/$arch
+Server = http://mirrors.mit.edu/archlinux/$repo/os/$arch
+Server = https://ohioix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch
+Server = https://m.lqy.me/arch/$repo/os/$arch
+Server = http://mirror.us.cdn-perfprod.com/archlinux/$repo/os/$arch
+Server = https://archmirror1.octyl.net/$repo/os/$arch
+Server = https://repo.ialab.dsu.edu/archlinux/$repo/os/$arch
+Server = http://nnenix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
+Server = https://arch.goober.cloud/$repo/os/$arch
+Server = http://mirrors.liquidweb.com/archlinux/$repo/os/$arch
+Server = http://mirror.clarkson.edu/archlinux/$repo/os/$arch
+Server = https://mirror.arizona.edu/archlinux/$repo/os/$arch
+Server = http://southfront.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirror.arizona.edu/archlinux/$repo/os/$arch
+Server = http://mirrors.rit.edu/archlinux/$repo/os/$arch
+Server = http://mirrors.xmission.com/archlinux/$repo/os/$arch
+Server = https://repo.customcomputercare.com/archlinux/$repo/os/$arch
+Server = http://irltoolkit.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://repo.customcomputercare.com/archlinux/$repo/os/$arch
+Server = http://mirrors.sonic.net/archlinux/$repo/os/$arch
+Server = http://arch.hugeblank.dev/$repo/os/$arch
+Server = https://mirrors.sonic.net/archlinux/$repo/os/$arch
+Server = http://mirror.metrocast.net/archlinux/$repo/os/$arch
+Server = http://mirror.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = http://ziply.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://mirrors.xtom.com/archlinux/$repo/os/$arch
+Server = http://arch.hu.fo/archlinux/$repo/os/$arch
+Server = http://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+Server = http://codingflyboy.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://opencolo.mm.fcix.net/archlinux/$repo/os/$arch
+Server = https://ord.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://ord.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = http://repo.miserver.it.umich.edu/archlinux/$repo/os/$arch
+Server = http://ohioix.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://archmirror1.octyl.net/$repo/os/$arch
+Server = http://mirrors.gigenet.com/archlinux/$repo/os/$arch
+Server = http://repo.ialab.dsu.edu/archlinux/$repo/os/$arch
+Server = http://mirror.math.princeton.edu/pub/archlinux/$repo/os/$arch
+Server = http://mirrors.cat.pdx.edu/archlinux/$repo/os/$arch
+Server = http://ftp.osuosl.org/pub/archlinux/$repo/os/$arch
+Server = http://mirrors.acm.wpi.edu/archlinux/$repo/os/$arch
+Server = https://ftp.osuosl.org/pub/archlinux/$repo/os/$arch
+Server = https://arch.hugeblank.dev/$repo/os/$arch
+Server = https://mirrors.iu13.net/archlinux/$repo/os/$arch
+Server = http://mirrors.smeal.xyz/arch-linux/$repo/os/$arch
+Server = https://mirror.theash.xyz/arch/$repo/os/$arch
+Server = https://us-mnz.soulharsh007.dev/archlinux/$repo/os/$arch
+Server = https://mirrors.lahansons.com/archlinux/$repo/os/$arch
+
+[2026-01-29 14:47:53] - INFO - Setting up swap on zram
+[2026-01-29 14:47:53] - INFO - Installing packages: ['zram-generator']
+[2026-01-29 14:47:57] - INFO - Zram size: 4096 from RAM: 7713768
+[2026-01-29 14:47:57] - INFO - Zram compression algorithm: zstd
+[2026-01-29 14:47:57] - INFO - Enabling service systemd-zram-setup@zram0.service
+[2026-01-29 14:47:57] - INFO - Installing packages: ['grub']
+[2026-01-29 14:48:03] - INFO - Adding bootloader Grub to /dev/sda1
+[2026-01-29 14:48:03] - DEBUG - Installing grub bootloader
+[2026-01-29 14:48:03] - INFO - Installing packages: ['grub']
+[2026-01-29 14:48:04] - DEBUG - Identifying root lvm by mapper device: /dev/ArchinstallVg/root
+[2026-01-29 14:48:04] - DEBUG - kernel parameters: root=/dev/ArchinstallVg/root zswap.enabled=0 rootfstype=btrfs
+[2026-01-29 14:48:04] - INFO - GRUB boot partition: /dev/sda1
+[2026-01-29 14:48:04] - INFO - GRUB EFI partition: /dev/sda1
+[2026-01-29 14:48:04] - INFO - Installing packages: ['efibootmgr']
+[2026-01-29 14:48:17] - INFO - Installing packages: ['networkmanager', 'wpa_supplicant']
+[2026-01-29 14:48:35] - INFO - Installing packages: ['network-manager-applet']
+[2026-01-29 14:50:20] - INFO - Enabling service NetworkManager.service
+[2026-01-29 14:50:20] - INFO - Creating user kae
+[2026-01-29 14:50:20] - INFO - Setting password for kae
+[2026-01-29 14:50:20] - INFO - Enabling sudo permissions for kae
+[2026-01-29 14:50:20] - DEBUG - Installing audio server: pulseaudio
+[2026-01-29 14:50:20] - INFO - Installing packages: ['pulseaudio']
+[2026-01-29 14:50:43] - INFO - Installing packages: ['nano', 'vim', 'openssh', 'htop', 'wget', 'iwd', 'wireless_tools', 'smartmontools', 'xdg-utils']
+[2026-01-29 14:51:00] - INFO - Installing profile i3-wm...
+[2026-01-29 14:51:00] - INFO - Installing packages: ['i3-wm', 'i3lock', 'i3status', 'i3blocks', 'xss-lock', 'xterm', 'lightdm-gtk-greeter', 'lightdm', 'dmenu']
+[2026-01-29 14:51:23] - DEBUG - Installing GFX driver: All open-source
+[2026-01-29 14:51:23] - INFO - Installing packages: ['xorg-server', 'xorg-xinit', 'mesa', 'xf86-video-amdgpu', 'xf86-video-ati', 'xf86-video-nouveau', 'libva-mesa-driver', 'libva-intel-driver', 'intel-media-driver', 'vulkan-radeon', 'vulkan-intel', 'vulkan-nouveau']
+[2026-01-29 14:51:42] - INFO - Installing packages: ['ly']
+[2026-01-29 14:51:45] - INFO - Enabling service ly@tty1
+[2026-01-29 14:51:45] - INFO - Disabling service getty@tty1
+[2026-01-29 14:51:46] - INFO - Activating systemd-timesyncd for time synchronization using Arch Linux and ntp.org NTP servers
+[2026-01-29 14:51:46] - INFO - Enabling service systemd-timesyncd
+[2026-01-29 14:51:46] - INFO - Setting password for root
+[2026-01-29 14:51:46] - DEBUG - Setting up Btrfs snapper
+[2026-01-29 14:51:46] - INFO - Installing packages: ['snapper']
+[2026-01-29 14:51:53] - INFO - Enabling service snapper-timeline.timer
+[2026-01-29 14:51:53] - INFO - Enabling service snapper-cleanup.timer
+[2026-01-29 14:51:53] - DEBUG - Setting up grub integration for either
+[2026-01-29 14:51:53] - INFO - Installing packages: ['grub-btrfs']
+[2026-01-29 14:53:12] - INFO - Installing packages: ['inotify-tools']
+[2026-01-29 14:53:15] - DEBUG - Configuring grub-btrfsd service for SnapshotType.Snapper at /.snapshots
+[2026-01-29 14:53:15] - INFO - Enabling service grub-btrfsd.service
+[2026-01-29 14:53:15] - INFO - Updating /mnt/etc/fstab
+[2026-01-29 14:53:16] - DEBUG - Disk states after installing:
+{
+    "blockdevices": [
+        {
+            "name": "loop0",
+            "path": "/dev/loop0",
+            "pkname": null,
+            "log_sec": 512,
+            "size": "971 MiB",
+            "pttype": null,
+            "ptuuid": null,
+            "rota": false,
+            "tran": null,
+            "partn": null,
+            "partuuid": null,
+            "parttype": null,
+            "uuid": null,
+            "fstype": "squashfs",
+            "fsver": "4.0",
+            "fsavail": 0,
+            "fsuse_percentage": "100%",
+            "type": "loop",
+            "mountpoint": "/run/archiso/airootfs",
+            "mountpoints": [
+                "/run/archiso/airootfs"
+            ],
+            "fsroots": [
+                "/"
+            ],
+            "children": []
+        },
+        {
+            "name": "sda",
+            "path": "/dev/sda",
+            "pkname": null,
+            "log_sec": 512,
+            "size": "228936 MiB",
+            "pttype": "gpt",
+            "ptuuid": "d5e28adf-b7f9-4d80-bd86-b500ac57bb90",
+            "rota": false,
+            "tran": "sata",
+            "partn": null,
+            "partuuid": null,
+            "parttype": null,
+            "uuid": null,
+            "fstype": null,
+            "fsver": null,
+            "fsavail": null,
+            "fsuse_percentage": null,
+            "type": "disk",
+            "mountpoint": null,
+            "mountpoints": [],
+            "fsroots": [],
+            "children": [
+                {
+                    "name": "sda1",
+                    "path": "/dev/sda1",
+                    "pkname": "sda",
+                    "log_sec": 512,
+                    "size": "1024 MiB",
+                    "pttype": "gpt",
+                    "ptuuid": "d5e28adf-b7f9-4d80-bd86-b500ac57bb90",
+                    "rota": false,
+                    "tran": null,
+                    "partn": 1,
+                    "partuuid": "ef84764b-6c19-4036-9745-94be3f775683",
+                    "parttype": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+                    "uuid": "F51C-D0B1",
+                    "fstype": "vfat",
+                    "fsver": "FAT32",
+                    "fsavail": 927952896,
+                    "fsuse_percentage": "13%",
+                    "type": "part",
+                    "mountpoint": "/mnt/boot",
+                    "mountpoints": [
+                        "/mnt/boot"
+                    ],
+                    "fsroots": [
+                        "/"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "sda2",
+                    "path": "/dev/sda2",
+                    "pkname": "sda",
+                    "log_sec": 512,
+                    "size": "227910 MiB",
+                    "pttype": "gpt",
+                    "ptuuid": "d5e28adf-b7f9-4d80-bd86-b500ac57bb90",
+                    "rota": false,
+                    "tran": null,
+                    "partn": 2,
+                    "partuuid": "a7198925-3625-4f01-be20-8dc50debc5c4",
+                    "parttype": "4f68bce3-e8cd-4db1-96e7-fbcaf984b709",
+                    "uuid": "CDh1Qx-tGmY-wPMs-Uu65-nKKJ-ZG45-YHXSB7",
+                    "fstype": "LVM2_member",
+                    "fsver": "LVM2 001",
+                    "fsavail": null,
+                    "fsuse_percentage": null,
+                    "type": "part",
+                    "mountpoint": null,
+                    "mountpoints": [],
+                    "fsroots": [],
+                    "children": [
+                        {
+                            "name": "ArchinstallVg-root",
+                            "path": "/dev/mapper/ArchinstallVg-root",
+                            "pkname": "sda2",
+                            "log_sec": 512,
+                            "size": "162372 MiB",
+                            "pttype": null,
+                            "ptuuid": null,
+                            "rota": false,
+                            "tran": null,
+                            "partn": null,
+                            "partuuid": null,
+                            "parttype": null,
+                            "uuid": "c7c6b01f-7fa3-4427-be02-d2a7bb134c26",
+                            "fstype": "btrfs",
+                            "fsver": null,
+                            "fsavail": 165525823488,
+                            "fsuse_percentage": "2%",
+                            "type": "lvm",
+                            "mountpoint": "/mnt/var/log",
+                            "mountpoints": [
+                                "/mnt/var/log",
+                                "/mnt/var/cache/pacman/pkg",
+                                "/mnt/home",
+                                "/mnt"
+                            ],
+                            "fsroots": [
+                                "/@log",
+                                "/@pkg",
+                                "/@home",
+                                "/@"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sdb",
+            "path": "/dev/sdb",
+            "pkname": null,
+            "log_sec": 512,
+            "size": "14755 MiB",
+            "pttype": "dos",
+            "ptuuid": "1da63f6e",
+            "rota": true,
+            "tran": "usb",
+            "partn": null,
+            "partuuid": null,
+            "parttype": null,
+            "uuid": null,
+            "fstype": null,
+            "fsver": null,
+            "fsavail": null,
+            "fsuse_percentage": null,
+            "type": "disk",
+            "mountpoint": null,
+            "mountpoints": [],
+            "fsroots": [],
+            "children": [
+                {
+                    "name": "sdb1",
+                    "path": "/dev/sdb1",
+                    "pkname": "sdb",
+                    "log_sec": 512,
+                    "size": "14722 MiB",
+                    "pttype": "dos",
+                    "ptuuid": "1da63f6e",
+                    "rota": true,
+                    "tran": null,
+                    "partn": 1,
+                    "partuuid": "1da63f6e-01",
+                    "parttype": "0x7",
+                    "uuid": "B5CC-8760",
+                    "fstype": "exfat",
+                    "fsver": "1.0",
+                    "fsavail": null,
+                    "fsuse_percentage": null,
+                    "type": "part",
+                    "mountpoint": null,
+                    "mountpoints": [],
+                    "fsroots": [],
+                    "children": [
+                        {
+                            "name": "ventoy",
+                            "path": "/dev/mapper/ventoy",
+                            "pkname": "sdb1",
+                            "log_sec": 512,
+                            "size": "1467 MiB",
+                            "pttype": "dos",
+                            "ptuuid": "2822af79",
+                            "rota": true,
+                            "tran": null,
+                            "partn": null,
+                            "partuuid": null,
+                            "parttype": null,
+                            "uuid": "2026-01-01-11-33-55-00",
+                            "fstype": "iso9660",
+                            "fsver": "Joliet Extension",
+                            "fsavail": null,
+                            "fsuse_percentage": null,
+                            "type": "dm",
+                            "mountpoint": null,
+                            "mountpoints": [],
+                            "fsroots": [],
+                            "children": []
+                        },
+                        {
+                            "name": "sdb1",
+                            "path": "/dev/mapper/sdb1",
+                            "pkname": "sdb1",
+                            "log_sec": 512,
+                            "size": "14722 MiB",
+                            "pttype": null,
+                            "ptuuid": null,
+                            "rota": true,
+                            "tran": null,
+                            "partn": null,
+                            "partuuid": null,
+                            "parttype": null,
+                            "uuid": "B5CC-8760",
+                            "fstype": "exfat",
+                            "fsver": "1.0",
+                            "fsavail": null,
+                            "fsuse_percentage": null,
+                            "type": "dm",
+                            "mountpoint": null,
+                            "mountpoints": [],
+                            "fsroots": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "sdb2",
+                    "path": "/dev/sdb2",
+                    "pkname": "sdb",
+                    "log_sec": 512,
+                    "size": "32 MiB",
+                    "pttype": "dos",
+                    "ptuuid": "1da63f6e",
+                    "rota": true,
+                    "tran": null,
+                    "partn": 2,
+                    "partuuid": "1da63f6e-02",
+                    "parttype": "0xef",
+                    "uuid": "E039-AD96",
+                    "fstype": "vfat",
+                    "fsver": "FAT16",
+                    "fsavail": null,
+                    "fsuse_percentage": null,
+                    "type": "part",
+                    "mountpoint": null,
+                    "mountpoints": [],
+                    "fsroots": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
+[2026-01-29 14:54:04] - INFO - Syncing the system...
+[2026-01-29 14:54:04] - INFO - Installation completed without any errors.
+Log files temporarily available at /var/log/archinstall.
+You may reboot when ready.
+
