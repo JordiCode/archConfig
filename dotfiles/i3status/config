@@ -1,0 +1,52 @@
+
+
+order += "disk /"
+order += "cpu_usage"
+order += "memory"
+order += "battery all"
+order += "volume master"
+order += "tztime local"
+order += "time"
+
+
+
+# This is just for display the String "AimerNeige" you can delete it or change it to your own name
+
+
+cpu_usage {
+    format = "  %usage "
+}
+
+memory {
+    format = " 💾 %used "
+}
+
+battery all {
+    format = " %status %percentage "
+    format_down = " No battery "
+    last_full_capacity = true
+    integer_battery_capacity = true
+    status_chr = "⚡"      # Cargando
+    status_bat = "🔋"      # Usando batería
+    status_unk = "❓"      # Desconocido
+    status_full = "🌕"     # Llena
+    status_idle = " 🔌"
+    low_threshold = 20
+    threshold_type = time
+}
+
+volume master {
+    format = " 🔊 %volume "
+    format_muted = " 🔇 "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+tztime local {
+    format = " 📅 %A %Y-%m-%d "
+}
+
+time {
+    format = " 🕒 %I:%M %p "
+}
